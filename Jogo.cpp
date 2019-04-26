@@ -1,5 +1,5 @@
 #include "Jogo.h"
-
+#include <time.h>
 
 Jogo::Jogo()
 {
@@ -157,10 +157,10 @@ void Jogo::telaJogo()
 	}
 
 	textoPontos.setString("Pontos " + to_string(pontos));
-	textoPontos.desenhar(50, 80);
+	textoPontos.desenhar(50, 40);
 
 	textoPontos.setString("Vidas " + to_string(nVidas));
-	textoPontos.desenhar(250, 80);
+	textoPontos.desenhar(250, 40);
 
 }
 

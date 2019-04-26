@@ -24,7 +24,7 @@ void monster::sortearSpawn()
 {
 	
 	this->x = -50;
-	sorteio = rand() % 600;
+	sorteio = rand() % 500 + 50;
 	this->y = sorteio;
 }
 

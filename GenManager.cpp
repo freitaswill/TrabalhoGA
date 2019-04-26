@@ -41,7 +41,7 @@ void GenManager::trocaPersonagem()
 	{
 		definePersonagem(new Mago);
 		getPersonagem()->setSpritesheet("Mage");
-		getPersonagem()->inicializar(300, 300);
+		getPersonagem()->inicializar(gJanela.getLargura()/2, gJanela.getAltura() / 2);
 		atual = 1;
 	}
 
@@ -49,7 +49,7 @@ void GenManager::trocaPersonagem()
 	{
 		definePersonagem(new Guerreiro);
 		getPersonagem()->setSpritesheet("Knight");
-		getPersonagem()->inicializar(300, 300);
+		getPersonagem()->inicializar(gJanela.getLargura() /2 , gJanela.getAltura() / 2);
 		atual = 2;
 	}
 
@@ -57,7 +57,7 @@ void GenManager::trocaPersonagem()
 	{
 		definePersonagem(new Thief);
 		getPersonagem()->setSpritesheet("Thief");
-		getPersonagem()->inicializar(300, 300);
+		getPersonagem()->inicializar(gJanela.getLargura() / 2, gJanela.getAltura() / 2);
 		atual = 3;
 	}
 
